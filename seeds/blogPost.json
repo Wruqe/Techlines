@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Sal",
+        "description": "🔥 Unleashing a controversial take: Why traditional blogging is dead, and social media is the future! 🚀",
+        "date_created": "2023-05-15"
+    },
+    {
+        "name": "Ernest",
+        "description": "💣 Buckle up for a tech upheaval! Debunking coding myths and pushing for a code-free future. 🚫💻",
+        "date_created": "2022-08-20"
+    },
+    {
+        "name": "Jen",
+        "description": "🤖 Stirring the AI pot! Why machine learning is overrated, and human intuition still reigns supreme. 👑",
+        "date_created": "2023-01-10"
+    },
+    {
+        "name": "Tyler",
+        "description": "🎮 Gaming revolution ahead! Bold claim: Console gaming is obsolete; cloud gaming is the true future. ☁️🕹️",
+        "date_created": "2022-11-30"
+    },
+    {
+        "name": "Dave",
+        "description": "💡 Web design war zone! Traditional vs. modern design—taking sides and breaking design norms. 🚧🎨",
+        "date_created": "2023-04-05"
+    }
+]
