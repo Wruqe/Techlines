@@ -45,7 +45,7 @@ router.post('/login', async (req, res) => {
         // create session
         req.session.save(() => {
             req.session.user_id = userData.id;
-            req.session.logged_in = true
+            req.session.loggedIn = true
 
         res.json({user: userData, Message: `${userData.name} you are now logged in!`})
         })
@@ -56,7 +56,7 @@ router.post('/login', async (req, res) => {
 
 
 router.post('/logout', async (req, res) => {
-    if(req.session.logged_in) {
+    if(req.session.loggedIn) {
         // take away session
         req.session.destroy(()=> {
             res.status(204).end();
