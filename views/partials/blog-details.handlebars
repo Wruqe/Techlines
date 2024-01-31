@@ -1,4 +1,11 @@
 <section class="card">
-    <header>{{name}}</header>
-    <p> {{description}} <br> Posted on <br> {{date_created}}</p>
+    <header>
+        {{title}}
+    by:
+        <a href="/profile/{{user.id}}">{{user.name}}</a>
+    </header>
+    <p>
+        {{description}} <br>
+        Posted on {{format_date date_created}} {{format_time date_created}}
+    </p>
 </section>

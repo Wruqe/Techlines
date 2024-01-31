@@ -8,12 +8,12 @@ router.get('/', withAuth, async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['id',],
+          attributes: ['id', 'name'],
         },
       ],
     });
 
-    const blogs = blogData.map(blog => blog.get({ plain: true }));
+    const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
     res.render('homepage', {
       blogs,
