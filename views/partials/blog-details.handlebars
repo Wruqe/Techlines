@@ -1,11 +1,22 @@
 <section class="card">
-    <header>
-        {{title}}
+  <header>
+    <a class="title" href="/blog/{{id}}">{{title}}</a>
+
     by:
-        <a href="/profile/{{user.id}}">{{user.name}}</a>
-    </header>
-    <p>
-        {{description}} <br>
-        Posted on {{format_date date_created}} {{format_time date_created}}
-    </p>
+    <a href="/profile/{{user.id}}">{{user.name}}</a>
+  </header>
+  <p>
+    {{description}}
+    <br />
+    Posted on
+    {{format_date date_created}}
+    {{format_time date_created}}
+    <br />
+   Comment count: {{comments.length}}
+    {{#each comments as |comment|}}
+{{> comment-details}}
+{{/each}}
+  </p>
 </section>
+ <link rel="stylesheet" type="text/css" href="/css/title.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">

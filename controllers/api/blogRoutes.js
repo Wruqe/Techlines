@@ -3,18 +3,22 @@ const { Blog } = require('../../models');
 
 
 // Create a Blogpost
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
-    const newBlog = await Blog.create({
-      ...req.body,
+    const blogObject = {
+      title: req.body.title,
+      description: req.body.description,
       user_id: req.session.user_id,
-    });
+    };
+
+    const newBlog = await Blog.create(blogObject);
 
     res.status(200).json(newBlog);
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
 
 // GET blogPost
 

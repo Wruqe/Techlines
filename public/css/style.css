@@ -153,3 +153,56 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+
+.futuristic-hover {
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+
+.futuristic-hover:hover {
+  color: #00aaff; 
+  text-shadow: 0 0 10px #00aaff; 
+}
+
+
+
+
+.navbar-brand.techlines {
+  background: none;
+}
+
+.navbar-brand.techlines:hover,
+.navbar-brand.techlines:focus {
+  background: none;
+}
+.navbar-nav .nav-link:hover {
+  background-color: transparent !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+a:hover::before {
+  width: 100%;
+  left: 0;
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+a:hover {
+  transform: scale(1.1); 
+}

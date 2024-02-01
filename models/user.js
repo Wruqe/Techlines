@@ -15,7 +15,11 @@ User.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
-        },
+        }, 
+        // user_img: {
+        //     type: DataTypes.BLOB,
+        //     allowNull: true,
+        //     },
         name: {
             type: DataTypes.STRING,
             allowNull: false

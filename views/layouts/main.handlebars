@@ -13,28 +13,29 @@
 </head>
 
 <body>
-  <header>
-    <h1>Techlines</h1>
-  </header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<header>
+  <h1>Techlines</h1>
+</header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Techlines</a>
+    <a class="navbar-brand techlines" href="/">Techlines</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link active futuristic-hover" aria-current="page" href="/">Home</a>
         {{#if loggedIn}}
-         <button id="logout" class="nav-link">Logout</button>
+          <button id="logout" class="nav-link futuristic-hover">Logout</button>
         {{else}}
-        <a class="nav-link" href="/login"login></a>
+          <a class="nav-link futuristic-hover" href="/login" login></a>
         {{/if}}
-        <a class="nav-link" aria-disabled="true" href="/profile">My profile</a>
+        <a class="nav-link futuristic-hover" aria-disabled="true" href="/profile">My profile</a>
       </div>
     </div>
   </div>
 </nav>
+
   <main>
     <div class="gallery">
       {{{body}}}

@@ -1,26 +1,32 @@
 <div id="profileCard" class="container mt-4">
-  <div class="row">
-    <!-- Left-side card for user details -->
-    <div class="col-md-6 profile-info">
+  <!-- Row for user details -->
+  <div class="row justify-content-center">
+    <div class="col-lg-20 profile-info text-center"> <!-- Adjusted col-md-8 to make it wider -->
       <div class="card">
-        <div class="card-body text-center">
+        <div class="card-body">
           <h2 class="card-title">{{name}}'s Techlines Profile!</h2>
-         <h3>{{name}}</h3>
-         <h3>{{email}}</h3>
+          <h3>{{name}}</h3>
+          <h3>{{email}}</h3>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Right-side card for creating new posts and displaying current posts -->
-    <div class="col-md-6">
+  <!-- Row for creating new posts and displaying current posts -->
+  <div class="row justify-content-center">
+    <div class="col-md-20 text-center"> <!-- Adjusted col-md-8 to make it wider -->
       <div class="card">
         <div class="card-body">
           <!-- Create new post form -->
-          <form class="new-post-form">
+          <form class="new-blog-form">
             <h3>Create a New Post:</h3>
             <div class="form-group">
-              <label for="post-content">Content:</label>
-              <textarea class="form-control" id="post-content" name="post-content"></textarea>
+              <label for="blog-title">Title:</label>
+              <textarea class="form-control" id="blog-title" name="blog-title"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="blog-content">Content:</label>
+              <textarea class="form-control" id="blog-content" name="blog-content"></textarea>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Create</button>
@@ -28,18 +34,17 @@
           </form>
 
           <!-- Display current posts -->
-          <div class="posts-list mt-4">
+          <div class="posts-list mt-4 text-center">
             {{#if blogs.length}}
               <h3>Current Posts:</h3>
               {{#each blogs as |blog|}}
-                <div class="row mb-2 current-post">
+                <div class="row mb-2 current-post mx-auto">
                   <div class="col-md-8">
                     <h4><a href="/posts/{{blog.id}}">{{blog.name}}</a></h4>
                     {{> blog-details}}
                   </div>
                   <div class="col-md-4">
-                    <button class="btn btn-lg btn-danger delete" data-id="{{blog.id}}">DELETE
-                    </button>
+                    <button class="btn btn-lg btn-danger delete" data-id="{{blog.id}}">DELETE</button>
                   </div>
                 </div>
               {{/each}}
@@ -54,3 +59,4 @@
 </div>
 
 <script src="/js/profile.js"></script>
+
