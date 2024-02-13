@@ -1,3 +1,7 @@
+# Techlines
+
+Techlines is a fullstack web application that allows users to explore the latest technology blogs and articles. The application is built using Node.js for the backend, Bootstrap for the front-end styling, SQL for the database, Sequelize as the ORM (Object-Relational Mapping) tool, Handlebars.js for templating, CSS for styling, and JavaScript for interactivity.
+
 ## Features
 
 - **User Authentication:** Users can sign up, log in, and log out securely.
