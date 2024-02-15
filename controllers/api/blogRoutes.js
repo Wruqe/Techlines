@@ -53,7 +53,7 @@ router.delete('/:id', async (req, res) => {
             res.status(404).json({Message: 'No blog with this name!'})
             return
         }
-        res.status(200).json(blogData,{Message: 'Blog deleted!'})
+        res.status(200).json({Message: 'Blog deleted!'})
     } catch (err) {
         res.status(500).json(err)
     }

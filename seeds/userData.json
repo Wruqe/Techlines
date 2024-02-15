@@ -2,27 +2,32 @@
     {
       "name": "Sal",
       "email": "sal@hotmail.com",
-      "password": "password12345"
+      "password": "password12345",
+      "profileImage": ""
     },
     {
       "name": "Ernest",
       "email": "Ernest.jones@gmail.com",
-      "password": "password12345"
+      "password": "password12345",
+      "profileImage": ""
     },
     {
       "name": "Jen",
       "email": "Jen2k20@aol.com",
-      "password": "password12345"
+      "password": "password12345",
+      "profileImage": ""
     },
     {
       "name": "Tyler",
       "email": "tyler99@msn.com",
-      "password": "password12345"
+      "password": "password12345",
+      "profileImage": ""
     },
     {
       "name": "Dave",
       "email": "dk@yahoo.com",
-      "password": "password12345"
+      "password": "password12345",
+      "profileImage": ""
     }
   ]
   
